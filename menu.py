@@ -1,5 +1,6 @@
 import subprocess
 import os
+
 os.system("clear")
 
 print("\nSauvegarde et restauration d'un site Wordpress \n\n 1. Sauvegarde de wordpress sur le SFTP \n 2. Restauration de wordpress depuis le SFTP \n 3. Sortir du menu \n")
