@@ -50,7 +50,6 @@ ssh_client.connect(hostname=host, username=username, password=password, port=por
 
 # Depot des fichiers backupmysql et backupwordpress sur le SFTP avec renommage à la date du jour
 
-
 datestamp = datetime.datetime.now()
 antislash = ('/')
 backupmysql = 'backupmysql.sql'
@@ -63,7 +62,6 @@ backupwordpresswithdate_path = remotepath + antislash + backupwordpress + '.'  +
 antislash = ('/')
 remote_backupmysql = remotepath + antislash + backupmysql
 remote_backupwordpress = remotepath + antislash + backupwordpress
-
 
 ftp_client = ssh_client.open_sftp()
 print()
