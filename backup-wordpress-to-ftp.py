@@ -97,6 +97,7 @@ transport.close()
 os.system("rm /root/backupmysql.sql")
 os.system("rm /root/backupwordpress.tar.gz")
 os.system("clear")
+
 # Confirmation de la bonne exécution de la sauvegarde
 
 print()
