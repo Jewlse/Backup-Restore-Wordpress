@@ -10,10 +10,12 @@ if choice =="1":
     print()
     print("Sauvegarde de Wordpress sur le SFTP\n")
     os.system("python3 backup-wordpress-to-ftp.py")
+    exit()
 if choice =="2":
     print()
     print("Restauration de la sauvegarde Wordpress depuis le SFTP\n")
     os.system("python3 restore-wordpress-from-ftp.py")
+    exit()
 if choice =="3":
     print()
     os.system("clear")
