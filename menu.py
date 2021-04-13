@@ -2,7 +2,7 @@ import subprocess
 import os
 os.system("clear")
 
-print("\nWordpress sur Ubuntu server 20.04 \n\n 1. Sauvegarde de wordpress sur le SFTP \n 2. Restauration de wordpress depuis le SFTP \n 3. Sortir du menu \n")
+print("\nSauvegarde et restauration d'un site Wordpress \n\n 1. Sauvegarde de wordpress sur le SFTP \n 2. Restauration de wordpress depuis le SFTP \n 3. Sortir du menu \n")
 choice = input()
 
 if choice =="1":
