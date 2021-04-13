@@ -98,11 +98,6 @@ os.system(command)
 print("La restauration de la base de données Wordpress est en cours, veuillez patienter.")
 os.system("clear")
 
-# Appel du script wordpressconfig.sh
-# print("Configuration de Wordpress.")
-# print()
-# subprocess.call(['sh', './files/wordpressconfig.sh'])
-
 # Demarrage du service apache
 
 os.system("systemctl start apache2.service")
