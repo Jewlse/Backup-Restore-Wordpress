@@ -41,7 +41,11 @@ Cette commande doit être exécutée dans le dossier contenant le fichier requir
 
 ## Démarrage
 
-Lancer le script avec la commande "sudo backup-restore-wordpress.py" dans un terminal qui pointe vers le dossier dans lequel se trouve le contenu du dépôt https://github.com/Jewlse/Backup-Restore-Wordpress
+Lancer le script en saissisant la commande suivante dans un terminal qui pointe vers le dossier dans lequel se trouve le contenu du dépôt https://github.com/Jewlse/Backup-Restore-Wordpress
+
+```shell
+sudo python3 backup-restore-wordpress.py
+```
 
 ## Auteurs
 * **Julien Dirr** _alias_ [@Jewlse](https://github.com/Jewlse)
