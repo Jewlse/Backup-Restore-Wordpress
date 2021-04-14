@@ -34,7 +34,7 @@ Dites comment faire pour lancer votre projet
 
 ## License
 
-Ce projet est sous licence MIT - voir le fichier [LICENSE.md](LICENSE.md) pour plus d'informations
+Ce projet est sous licence MIT - voir le fichier [LICENSE.md](https://github.com/Jewlse/Backup-Restore-Wordpress/blob/main/LICENSE) pour plus d'informations
 
 
 
