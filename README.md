@@ -8,7 +8,7 @@ WordPress est un logiciel destiné à la conception et à la mise à jour dynami
 
 ### Pré-requis
 
-Le script ne peut être exécuté que sur un système disposant d'un serveur LAMP (Linux, Apache, MySQL, PHP) et d'une installation Wordpress.
+Le script ne fonctionnera que sur un système disposant d'un serveur LAMP (Linux, Apache, MySQL, PHP) et d'une installation Wordpress.
 
 Environnement lors de la fabrication du script :
 
@@ -21,7 +21,7 @@ Environnement lors de la fabrication du script :
 
 ### Installation et configuration
 
-1) Installer le paquet python3 sur votre système d'exploitation linux si celui-ce ne le possède pas déjà. Pour un Ubuntu Server 20.04, saisir la commande suivante dans un terminal:
+1) Installer le paquet python3 sur votre système d'exploitation linux si celui-ci ne le possède pas déjà. Pour un Ubuntu Server 20.04, saisir la commande suivante dans un terminal:
 ```shell
 sudo apt-get update && apt-get upgrade && apt-get install python3 -y
 ```
