@@ -1,11 +1,6 @@
 #!/usr/bin/env python
 
 import os
-
-os.system ("apt-get install python3-pip -y")
-os.system ("pip3 install -r requirements.txt")
-os.system ("clear")
-
 import tarfile
 import subprocess
 import datetime
