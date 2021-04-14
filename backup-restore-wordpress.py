@@ -21,7 +21,7 @@ def backupwordpresstosftp():
 
     os.system("systemctl stop apache2.service")
 
-    # Execution du backup de la base de donnée wordpress et copie du backup wordpress.sql à la racine /root
+    # Execution du backup de la base de données wordpress et copie du backup à la racine /root
 
     os.system("clear")
     command = "mysqldump -u " + mysqluser +" --password=" + mysqlpassword + " wordpress > /root/backupmysql.sql"
@@ -41,7 +41,7 @@ def backupwordpresstosftp():
         tar.add(name)
     tar.close()
 
-    # Redemarrage du services apache
+    # Redemarrage du service apache
 
     os.system("systemctl start apache2.service")
 
@@ -61,8 +61,6 @@ def backupwordpresstosftp():
     backupwordpresswithdate = "backupwordpress.tar.gz."+(datestamp.strftime("%d%m%y"))
     backupmysqlwithdate_path = remotepath + antislash + backupmysql + '.'  + (datestamp.strftime("%d%m%y"))
     backupwordpresswithdate_path = remotepath + antislash + backupwordpress + '.'  + (datestamp.strftime("%d%m%y"))
-
-    antislash = ('/')
     remote_backupmysql = remotepath + antislash + backupmysql
     remote_backupwordpress = remotepath + antislash + backupwordpress
 
@@ -75,7 +73,7 @@ def backupwordpresstosftp():
     ftp_client.put('/root/backupwordpress.tar.gz', backupwordpresswithdate_path)
     ftp_client.close()
 
-    # Suppression des fichiers de + de 4 semaines
+    # Suppression des fichiers qui ont dépassé la durée de stockage renseignée dans le fichier myconfiguration
 
     transport = paramiko.Transport((host, port))
     transport.connect(username = username, password = password)
@@ -87,7 +85,7 @@ def backupwordpresstosftp():
         createtime = datetime.datetime.fromtimestamp(timestamp)
         now = datetime.datetime.now()
         delta = now - createtime
-        if delta > datetime.timedelta(minutes=43200):
+        if delta > datetime.timedelta(minutes=storageduration):
             filepath = remotepath + '/' + entry.filename
             sftp.remove(filepath)
     sftp.close()

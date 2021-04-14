@@ -12,6 +12,8 @@ port = 22
 remotepath = "/data/backupwebsite"
 # Dossier wordpress local:
 wordpresslocalpath = "/var/www/wordpress"
+# Durée d'archivage en minutes des sauvegarde sur le SFTP:
+storageduration = 2880 
 
 ### Configuration MySQL:
 
