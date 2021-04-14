@@ -11,8 +11,7 @@ import subprocess
 import datetime
 import time
 import paramiko
-from sftpconfig import *
-from mysqlconfig import *
+from myconfiguration import *
 
 ### Fonction de sauvegarde de wordpress vers le SFTP
 
@@ -28,16 +27,16 @@ def backupwordpresstosftp():
     command = "mysqldump -u " + mysqluser +" --password=" + mysqlpassword + " wordpress > /root/backupmysql.sql"
     os.system(command)
     os.system("clear")
-    print("Sauvegarde de la base de données Wordpress et du dossier /var/www/wordpress en cours, veuillez patienter.")
+    print("Sauvegarde de la base de données Wordpress et du dossier " + wordpresslocalpath + " en cours, veuillez patienter.")
 
     # Mise en variable du fichier /root/backupwordpress.tar.gz
 
     file_name_wp = "/root/backupwordpress.tar.gz"
 
-    # Archivage du dossier /var/www/html/wordpress pour le backup wordpress
+    # Archivage du dossier wordpress pour le backup wordpress
 
     tar = tarfile.open(file_name_wp, "w:gz")
-    os.chdir("/var/www/wordpress")
+    os.chdir(wordpresslocalpath)
     for name in os.listdir("."):
         tar.add(name)
     tar.close()
@@ -186,10 +185,10 @@ def restorewordpressfromsftp():
 
     os.system("systemctl stop apache2.service")
 
-    # Decompression de l'archives backupwordpress dans /var/www/wordpress
+    # Decompression de l'archive backupwordpress vers le dossier local wordpress
 
     tar = tarfile.open(localpathwordpress, "r:gz")
-    tar.extractall("/var/www/wordpress")
+    tar.extractall(wordpresslocalpath)
     tar.close()
 
     # Restauration de la base de données wordpress dans MySQL

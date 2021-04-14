@@ -10,6 +10,8 @@ password = ('lutherking81')
 port = 22
 # Dossier distant SFTP
 remotepath = "/data/backupwebsite"
+# Dossier wordpress local:
+wordpresslocalpath = "/var/www/wordpress"
 
 ### Configuration MySQL:
 
