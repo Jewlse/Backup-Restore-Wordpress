@@ -1,14 +1,14 @@
 # Backup-Restore-Wordpress
 
-Script python qui permet de restaurer/sauvegarder un site Wordpress depuis/vers un SFTP
+Ce Script python permet de restaurer/sauvegarder complètement un site Wordpress depuis/vers un SFTP. 
 
 ## Pour commencer
 
-Entrez ici les instructions pour bien débuter avec votre projet...
+WordPress est un logiciel destiné à la conception et à la mise à jour dynamique de sites web ou d'applications multimédias.
 
 ### Pré-requis
 
-Ce qu'il est requis pour commencer avec votre projet...
+Le script fonctionne sur les systèmes linux
 
 - Programme 1
 - Programme 2
