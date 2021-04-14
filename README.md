@@ -49,8 +49,8 @@ sudo python3 backup-restore-wordpress.py
 
 ## Version du script
 
-* Version 1.0: 14/04/2021
-    * Ajout du script sur Github
+* Version 1.0.0 : 
+    * Mise à disposition du script sur Github le 14/04/21
 
 ## Auteurs
 * **Julien Dirr** _alias_ [@Jewlse](https://github.com/Jewlse)
