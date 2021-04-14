@@ -47,6 +47,11 @@ Lancer le script en saissisant la commande suivante dans un terminal qui pointe 
 sudo python3 backup-restore-wordpress.py
 ```
 
+## Version du script
+
+* Version 1.0: 14/04/2021
+    * Ajout du script sur Github
+
 ## Auteurs
 * **Julien Dirr** _alias_ [@Jewlse](https://github.com/Jewlse)
 
