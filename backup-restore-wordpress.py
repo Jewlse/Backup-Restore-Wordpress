@@ -99,9 +99,7 @@ def backupwordpresstosftp():
 
     # Confirmation de la bonne exécution de la sauvegarde
 
-    print()
     print("La sauvegarde de Wordpress sur le SFTP s'est bien déroulée.")
-    print()
 
 ### Fonction de restauration de wordpress depuis le SFTP
 
@@ -149,9 +147,7 @@ def restorewordpressfromsftp():
             print("Le fichier", backupmysql, "est présent sur le SFTP et a bien été restauré.")
         except IOError:
             os.system("clear")
-            print()
             print("Le fichier", backupmysql, "n'est pas présent sur le SFTP, la restauration est annulée.")
-            print()
             os.system("rm -r /root/backup")
             menu()
         ssh_client.close()
@@ -168,10 +164,8 @@ def restorewordpressfromsftp():
             sftp.get(remote_backupwordpress,localpathwordpress)
             print("Le fichier", backupwordpress, "est présent sur le SFTP et a bien été restauré.")
         except IOError:
-            print()
             os.system("clear")
             print("Le fichier", backupwordpress, "n'est pas présent sur le SFTP, la restauration est annulée.")
-            print()
             os.system("rm -r /root/backup")
             menu()
         ssh_client.close()
@@ -208,9 +202,7 @@ def restorewordpressfromsftp():
 
     # Confirmation de la bonne exécution de la restauration
 
-    print()
     print("La restauration de Wordpress depuis le SFTP s'est bien déroulée.")
-    print()
 
 ### Fonction sortie du programme
 
@@ -227,20 +219,18 @@ def menu():
     choice = input()
 
     if choice =="1":
-        print()
-        print("Sauvegarde de Wordpress sur le SFTP\n")
+        print("\nSauvegarde de Wordpress sur le SFTP.")
         backupwordpresstosftp()
         menu()
     if choice =="2":
-        print()
-        print("Restauration de la sauvegarde Wordpress depuis le SFTP\n")
+        print("\nRestauration de la sauvegarde Wordpress depuis le SFTP.")
         restorewordpressfromsftp()
         menu()
     if choice =="3":
-        print()
         os.system("clear")
         exitmenu()
     while choice not in ["1","2","3","4"]:
-        print ("La saisie n'est pas valide\n")
-        break
+        os.system("clear")
+        print("La saisie n'est pas valide, veuillez recommencer.")
+        menu()
 menu()
