@@ -1,23 +1,23 @@
 ### Configuration SFTP:
 
 # Adresse du SFTP
-host = ('35.180.173.102')
+host = ('XXX.XXX.XXX.XXX')
 # Identifiant SFTP
-username = ('sftp_user')
+username = ('XXXXXXXXX')
 # Mot de passe SFTP
-password = ('lutherking81')
+password = ('XXXXXXXXXXXX')
 # Port SFTP
-port = 22
+port = XX
 # Dossier distant SFTP
-remotepath = "/data/backupwebsite"
+remotepath = "/XXXX/XXXXXXXXXXXXX"
 # Dossier wordpress local:
-wordpresslocalpath = "/var/www/wordpress"
+wordpresslocalpath = "/XXX/XXX/XXXXXXXXX"
 # Durée d'archivage en minutes des sauvegarde sur le SFTP:
-storageduration = 2880 
+storageduration = XXXXXXX 
 
 ### Configuration MySQL:
 
 # Identifiant MySQL
-mysqluser = 'root'
+mysqluser = 'XXXX'
 # Mot de passe MySQL
-mysqlpassword = 'password'
+mysqlpassword = 'XXXXXXXX'
