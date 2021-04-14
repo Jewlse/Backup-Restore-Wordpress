@@ -31,7 +31,7 @@ sudo apt-get install python3-pip -y
 ```
 4) Télécharger le contenu du dépôt https://github.com/Jewlse/Backup-Restore-Wordpress dans un dossier en local sur votre machine.
 
-5) Installer les modules python3 listés dans le fichier requirements.txt, ils sont indispensables à la bonne exécution du scrit. Pour un Ubuntu Server 20.04, saisir la commande suivante dans un terminal:
+5) Installer les modules python3 listés dans le fichier requirements.txt, ils sont indispensables à la bonne exécution du script. Pour un Ubuntu Server 20.04, saisir la commande suivante dans un terminal:
 ```shell
 sudo pip3 install -r requirements.txt
 ```
