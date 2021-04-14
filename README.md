@@ -21,16 +21,23 @@ Environnement lors de la fabrication du script :
 
 ### Installation et configuration
 
-1) Installer le paquet python3 sur votre système d'exploitation linux si celui-ce ne le possède pas déjà. 
-Sur Ubuntu Server 20.04, saisir la commande suivante dans un terminal
+1) Installer le paquet python3 sur votre système d'exploitation linux si celui-ce ne le possède pas déjà. Pour un Ubuntu Server 20.04, saisir la commande suivante dans un terminal:
 ```shell
 sudo apt-get update && apt-get upgrade && apt-get install python3 -y
 ```
+2) Installer le gestionnaire de paquet python pip. Pour Ubuntu Server 20.04, saisir la commande suivante dans un terminal:
+```shell
+sudo apt-get install python3-pip -y
+```
+4) Télécharger le contenu du dépôt https://github.com/Jewlse/Backup-Restore-Wordpress dans un dossier en local sur votre machine.
 
-2) Installer le gestionnaire de paquet python pip. Sur Ubuntu Server 20.04, saisir la commande suivante dans un terminal "sudo apt-get install python3-pip -y"
-3) Télécharger le contenu du dépôt https://github.com/Jewlse/Backup-Restore-Wordpress dans un dossier en local sur votre machine.
-4) Installer les modules python3 listés dans le fichier requirements.txt, ils sont indispensables à la bonne exécution du scrit. Sur Ubuntu Server 20.04, saisir la commande suivante dans une terminal "sudo pip3 install -r requirements.txt". Cette commande doit être exécutée dans le dossier contenant le fichier requirements.txt.
-5) Ouvrir le fichier myconfiguration.py avec un editeur de texte et saisir les informations propres à votre installation à la place des XXXXXXXXXXX.
+5) Installer les modules python3 listés dans le fichier requirements.txt, ils sont indispensables à la bonne exécution du scrit. Pour un Ubuntu Server 20.04, saisir la commande suivante dans un terminal:
+```shell
+sudo pip3 install -r requirements.txt
+```
+Cette commande doit être exécutée dans le dossier contenant le fichier requirements.txt.
+
+6) Ouvrir le fichier myconfiguration.py avec un editeur de texte et saisir les informations propres à votre installation à la place des XXXXXXXXXXX.
 
 ## Démarrage
 
