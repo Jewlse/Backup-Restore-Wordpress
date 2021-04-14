@@ -226,6 +226,6 @@ def menu():
         exitmenu()
     while choice not in ["1","2","3","4"]:
         os.system("clear")
-        print("La saisie n'est pas valide, veuillez recommencer.")
+        print("La saisie (" + choice + ") n'est pas un choix valide, veuillez recommencer.")
         menu()
 menu()
