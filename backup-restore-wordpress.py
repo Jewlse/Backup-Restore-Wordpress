@@ -8,6 +8,8 @@ import time
 import paramiko
 from myconfiguration import *
 
+os.system("clear")
+
 ### Fonction de sauvegarde de wordpress vers le SFTP
 
 def backupwordpresstosftp():
