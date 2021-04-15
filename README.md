@@ -1,6 +1,13 @@
 ![Python 3.6](https://img.shields.io/badge/python-3.6%2B-green)
 ![MIT](https://img.shields.io/badge/license-MIT-green)
 
+_                _                              _                                       _                         
+| |__   __ _  ___| | ___   _ _ __  _ __ ___  ___| |_ ___  _ __ _____      _____  _ __ __| |_ __  _ __ ___  ___ ___ 
+| '_ \ / _` |/ __| |/ / | | | '_ \| '__/ _ \/ __| __/ _ \| '__/ _ \ \ /\ / / _ \| '__/ _` | '_ \| '__/ _ \/ __/ __|
+| |_) | (_| | (__|   <| |_| | |_) | | |  __/\__ \ || (_) | | |  __/\ V  V / (_) | | | (_| | |_) | | |  __/\__ \__ \
+|_.__/ \__,_|\___|_|\_\\__,_| .__/|_|  \___||___/\__\___/|_|  \___| \_/\_/ \___/|_|  \__,_| .__/|_|  \___||___/___/
+                            |_|                                                           |_|                      
+
 # Backup-Restore-Wordpress
 
 Ce Script python permet de restaurer/sauvegarder en intégralité un site Wordpress depuis/vers un SFTP. 
