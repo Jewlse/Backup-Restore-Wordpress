@@ -146,7 +146,7 @@ def restorewordpressfromsftp():
             os.system("clear")
             print("Le fichier", backupmysql, "n'est pas présent sur le SFTP, la restauration est annulée.")
             os.system("rm -r /root/backup")
-            menu()
+            restorewordpressfromsftp()
         ssh_client.close()
     except paramiko.SSHException:
         print("Connection Error")
@@ -164,7 +164,7 @@ def restorewordpressfromsftp():
             os.system("clear")
             print("Le fichier", backupwordpress, "n'est pas présent sur le SFTP, la restauration est annulée.")
             os.system("rm -r /root/backup")
-            menu()
+            restorewordpressfromsftp()
         ssh_client.close()
     except paramiko.SSHException:
         print("Connection Error")
