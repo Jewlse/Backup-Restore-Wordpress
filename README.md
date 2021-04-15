@@ -1,3 +1,6 @@
+![Python 3.6](https://img.shields.io/badge/python-3.6%2B-green)
+![MIT](https://img.shields.io/badge/license-MIT-green)
+
 # Backup-Restore-Wordpress
 
 Ce Script python permet de restaurer/sauvegarder en intégralité un site Wordpress depuis/vers un SFTP. 
