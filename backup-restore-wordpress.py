@@ -2,7 +2,6 @@
 
 import os
 import tarfile
-import subprocess
 import datetime
 import time
 import paramiko
@@ -141,7 +140,7 @@ def restorewordpressfromsftp():
         try:
             print(sftp.stat(remote_backupmysql))
             sftp.get(remote_backupmysql,localpathmysql)
-            print("Le fichier", backupmysql, "est présent sur le SFTP et a bien été restauré.")
+            print("Le fichier", backupmysql, "est présent sur le SFTP et a bien été téléchargé.")
         except IOError:
             os.system("clear")
             print("Le fichier", backupmysql, "n'est pas présent sur le SFTP, la restauration est annulée.")
@@ -159,7 +158,7 @@ def restorewordpressfromsftp():
         try:
             print(sftp.stat(remote_backupwordpress))
             sftp.get(remote_backupwordpress,localpathwordpress)
-            print("Le fichier", backupwordpress, "est présent sur le SFTP et a bien été restauré.")
+            print("Le fichier", backupwordpress, "est présent sur le SFTP et a bien été téléchargé.")
         except IOError:
             os.system("clear")
             print("Le fichier", backupwordpress, "n'est pas présent sur le SFTP, la restauration est annulée.")
